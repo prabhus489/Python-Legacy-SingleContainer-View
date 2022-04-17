@@ -1,4 +1,5 @@
-FROM python:3.10.4-slim
+FROM  prabhu12yuva/fsm-appx:python-3.10.4
+#FROM python:3.10.4-slim
 
 # Keeps Python from generating .pyc files in the container
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -18,3 +19,4 @@ RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /
 USER appuser
 ENTRYPOINT ["/bin/bash"]
 CMD ["startmyapps.sh"]
+
