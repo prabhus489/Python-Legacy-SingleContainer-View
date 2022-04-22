@@ -104,7 +104,12 @@ def sendin(db=connect()):
         cur.connection.commit()
         cur.close()
     return f"Marketing Feedback Registration Done!!" 
- 
+
+
+@app.route('/')
+@app.route('/index')
+def index():
+    return f"Welcome to this Flask Application!, Your are Currently viewing Flask based application running on port 5000"
  
 
 #app.run(host='localhost', port=5000) 
