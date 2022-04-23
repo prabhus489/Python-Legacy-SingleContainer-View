@@ -18,7 +18,3 @@ RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /
 USER appuser
 ENTRYPOINT ["/bin/bash"]
 CMD ["startmyapps.sh"]
-#CMD ["gunicorn", "--bind", "0.0.0.0:8000", "manage:app"]
-#CMD ["manage.py", "runserver"]
-#docker run -d --name fsmapp -v $(pwd):/app -p 5000:5000 -p 8000:8000  python-appx
-
