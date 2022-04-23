@@ -1,3 +1,5 @@
 __pycache__/
 **/__pycache__/
 Project_Team
+djangoapp.log
+flaskapp.log
