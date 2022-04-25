@@ -24,3 +24,6 @@
 ### docker run -d prabhu12yuva/fsm-appx:fsmappx2.0
 # This image contains all the app code files present in /app directory predefinely
 ### docker pull prabhu12yuva/fsm-appx:python-3.10.4
+
+### docker tag fsmflask-appx-1:latest prabhu12yuva/fsm-appx:myflaskapp1
+### docker push prabhu12yuva/fsm-appx:myflaskapp1
