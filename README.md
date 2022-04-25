@@ -8,7 +8,7 @@
 ### docker run -d --name fsmapp -v $(pwd):/app -p 5000:5000 -p 8000:8000  fsm-appx
 ## Onwindows
 ### docker run -d --name fsmappmounted -v "S:\Scalable_Services\Python-Legacy-SingleContainer-View":/app -p 5000:5000 -p 8000:8000 fsm-appx
-## On any
+## On any(without bind mount path)
 ### docker run -d --name fsmappwithoutmount  -p 5000:5000 -p 8000:8000  fsm-appx
 
 # To Push this image to the docker hub registry
